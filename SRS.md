@@ -20,7 +20,6 @@ Tài liệu này mô tả các yêu cầu phần mềm của hệ thống Khóa 
 |-----------|-------|
 | Arduino Uno | Vi điều khiển chính của hệ thống. |
 | RFID | Công nghệ nhận dạng qua sóng vô tuyến. |
-| Cảm biến vân tay | Thiết bị xác thực sinh trắc học. |
 | LCD | Màn hình hiển thị thông tin. |
 | Buzzer | Còi báo động khi có truy cập trái phép. |
 
