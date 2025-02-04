@@ -91,7 +91,7 @@ Hệ thống khóa cửa thông minh hoạt động theo mô hình nhúng với 
 | NF-02 | Độ trễ mở khóa không vượt quá **2 giây**.                      |
 | NF-03 | Lưu trữ tối thiểu **10.000 bản ghi**.                          |
 | NF-04 | Hỗ trợ giao tiếp **Bluetooth hoặc WiFi** để điều khiển từ xa.  |
-| NF-05 | Độ chính xác của cảm biến vân tay tối thiểu **95%**.           |
+
 
 ---
 
