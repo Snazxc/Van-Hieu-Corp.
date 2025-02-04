@@ -1,16 +1,16 @@
 
-### 📌 **Software Requirements Specification (SRS)**  
-# **Khóa Cửa Thông Minh trên Arduino**
+##Software Requirements Specification (SRS)
+# Khóa Cửa Thông Minh trên Arduino
 
 ---
 
-## 1. Giới thiệu**  
+## 1. Giới thiệu
 ### 1.1 Mục đích  
-Tài liệu này mô tả các yêu cầu phần mềm của hệ thống **Khóa Cửa Thông Minh sử dụng Arduino**, giúp quản lý quyền truy cập bằng mật khẩu, RFID hoặc vân tay, đảm bảo an ninh cho cửa ra vào.  
+Tài liệu này mô tả các yêu cầu phần mềm của hệ thống Khóa Cửa Thông Minh sử dụng Arduino, giúp quản lý quyền truy cập bằng mật khẩu, RFID hoặc vân tay, đảm bảo an ninh cho cửa ra vào.  
 
 ### 1.2 Phạm vi  
-- Hệ thống khóa cửa sử dụng **Arduino Uno** kết hợp với **cảm biến vân tay, module RFID và bàn phím số**.  
-- Cho phép mở khóa bằng **mật khẩu, thẻ RFID hoặc vân tay**.  
+- Hệ thống khóa cửa sử dụng Arduino Uno kết hợp với module RFID và bàn phím số.  
+- Cho phép mở khóa bằng mật khẩu, thẻ RFID.  
 - Ghi lại lịch sử mở cửa và hiển thị thông tin trên màn hình LCD.  
 - Có cảnh báo khi nhập sai nhiều lần hoặc có truy cập trái phép.  
 - Hỗ trợ điều khiển từ xa thông qua **ứng dụng di động**.  
@@ -30,9 +30,9 @@ Tài liệu này mô tả các yêu cầu phần mềm của hệ thống **Khó
 
 ---
 
-## 2. Mô tả chung**  
+## 2. Mô tả chung
 ### 2.1 Góc nhìn hệ thống  
-Hệ thống khóa cửa thông minh hoạt động theo mô hình **nhúng** với **Arduino Uno** là bộ điều khiển chính. Nó nhận đầu vào từ **bàn phím số, RFID, cảm biến vân tay**, xử lý dữ liệu và kích hoạt **động cơ servo** để mở khóa nếu xác thực thành công.  
+Hệ thống khóa cửa thông minh hoạt động theo mô hình nhúng với Arduino Uno là bộ điều khiển chính. Nó nhận đầu vào từ bàn phím số, RFID, cảm biến vân tay, xử lý dữ liệu và kích hoạt động cơ servo để mở khóa nếu xác thực thành công.  
 
 ### 2.2 Chức năng chung  
 - Nhập mật khẩu qua bàn phím.  
@@ -42,19 +42,19 @@ Hệ thống khóa cửa thông minh hoạt động theo mô hình **nhúng** v�
 - Cảnh báo khi nhập sai quá số lần quy định.  
 
 ### 2.3 Ràng buộc  
-- Chạy trên **Arduino Uno**.  
-- Điện áp hoạt động: **5V DC**.  
-- Kết nối tối đa **10.000 người dùng** trong bộ nhớ.  
-- Giao tiếp **UART, SPI, I2C** với các module ngoại vi.  
+- Chạy trên Arduino Uno.  
+- Điện áp hoạt động: 5V DC.  
+- Kết nối tối đa 10.000 người dùng trong bộ nhớ.  
+- Giao tiếp UART, SPI, I2C với các module ngoại vi.  
 
 ---
 
-## 3. Yêu cầu chức năng**  
+## 3. Yêu cầu chức năng  
 
 ### 3.1 Xác thực bằng mật khẩu  
 #### Mô tả  
 - Người dùng nhập mật khẩu trên bàn phím.  
-- Nếu đúng, cửa mở; nếu sai quá **3 lần**, còi báo động kêu.  
+- Nếu đúng, cửa mở; nếu sai quá 3 lần, còi báo động kêu.  
 
 #### Luồng hoạt động
 1. Nhập mật khẩu.  
@@ -96,9 +96,9 @@ Hệ thống khóa cửa thông minh hoạt động theo mô hình **nhúng** v�
 ---
 
 ## 5. Các ràng buộc khác
-- **Phần cứng**: Hệ thống chỉ chạy trên **Arduino Uno** hoặc các phiên bản tương đương.  
-- **An toàn**: Dữ liệu mật khẩu và vân tay phải được mã hóa.  
-- **Bảo trì**: Có khả năng cập nhật firmware qua OTA (Over-The-Air).  
+- Phần cứng: Hệ thống chỉ chạy trên Arduino Uno hoặc các phiên bản tương đương.  
+- An toàn: Dữ liệu mật khẩu và vân tay phải được mã hóa.  
+- Bảo trì: Có khả năng cập nhật firmware qua OTA (Over-The-Air).  
 
 ---
 
